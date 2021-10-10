@@ -5,8 +5,8 @@ This is the code sample repo for TypeScript Tutorial which is design for React d
 ### Code Samples
 
 - **Chatpter1: TypeScript Basic Concept**
-  - 1.1 [quick-start](src/chatpter1/quick-start.ts)
-  - 1.2 [basic-types](src/chatpter1/basic-types.ts)
+  - 1.1 [quick-start](src/chatpter1/1.1%20quick-start.ts)
+  - 1.2 [basic-types](src/chatpter1/1.2%20basic-types.ts)
   - 1.3 [operators](src/chatpter1/1.3%20operators.ts)
   - 1.4 [advanced-types](src/chatpter1/1.4%20advanced-types.ts)
   - 1.5 [assertions](src/chatpter1/1.5%20assertions.ts)
