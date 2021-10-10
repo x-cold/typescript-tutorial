@@ -31,6 +31,9 @@ This is the code sample repo for TypeScript Tutorial which is design for React d
   - 3.1 [request](src/chatpter3/3.1%20request.ts)
   - 3.2 [use-async](src/chatpter3/3.2%20use-async.ts)
   - 3.3 [request-ui](src/chatpter3/3.3%20request-ui.tsx)
+  - 3.4 [antd-form-sample](src/chatpter3/3.4%20antd-form-sample.tsx)
+  - 3.5 [custom-form](src/chatpter3/3.5%20custom-form.tsx)
+  - 3.6 [custom-use-form](src/chatpter3/3.6%20custom-use-form.tsx)
 
 - **Chatpter4: Practical Tips**
   - 4.1 [anti-anyscript](src/chatpter4/4.1%20anti-anyscript.tsx)
