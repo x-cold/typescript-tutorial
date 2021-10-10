@@ -1,6 +1,6 @@
 # typescript-tutorial
 
-This is the code sample repo for TypeScript Tutorial.
+This is the code sample repo for TypeScript Tutorial which is design for React developer starter.
 
 ### Code Samples
 
