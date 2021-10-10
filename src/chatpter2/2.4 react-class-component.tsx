@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 interface JsxClass<P, S> extends React.Component<P, S> {
   render(): React.ReactElement<P>;
@@ -14,14 +14,14 @@ interface ReactCtor<P, S> {
 
 interface Props<T> {
   val: T;
-  b: number;
+  type: string;
 }
 
 class C<T> extends React.Component<Props<T>, {}> implements Render<Props<T>>  {
   constructor(props: Props<T>, context?: React.ContextType<any>) {
     super(props);
     // this.state = /* ... */
-    this.props.b = 1;
+    // this.props.b = 1;
   }
 
   render(): React.ReactElement {
@@ -32,5 +32,4 @@ class C<T> extends React.Component<Props<T>, {}> implements Render<Props<T>>  {
 const C1: ReactCtor<Props<number>, {}> = C;
 
 
-const node = <C1 val={1} />;
-
+const node = <C1 val={1} type="input" />;

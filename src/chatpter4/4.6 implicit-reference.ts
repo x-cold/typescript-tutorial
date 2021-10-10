@@ -1,5 +1,3 @@
-/* eslint @typescript-eslint/no-unused-vars: 0 */
-
 const a: number = 10; // 不建议
 const a1 = 10; // 建议，自动类型推断
 

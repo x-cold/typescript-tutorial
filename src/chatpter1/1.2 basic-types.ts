@@ -35,7 +35,7 @@ function functionWithoutReturnType(): void {
   if (Math.random() < 0.3) {
     return;
   }
-  return null;
+  return undefined;
 }
 
 // Null

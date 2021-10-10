@@ -1,3 +1,12 @@
+import React, { useState, useCallback, } from 'react';
+
+const noop = (arg?: any) => { };
+const expressionReturningFoo = noop;
+const processBar = noop;
+const produce = noop;
+
+type Draft<S> = {};
+
 // 缩小any的影响范围
 function f1() {
   const x: any = expressionReturningFoo(); // 不建议,后续的x都是any了
@@ -42,3 +51,26 @@ output.push(1);
 console.log(output); // number[]
 output.push('2');
 console.log(output); // (number|string)[]
+
+// 使用 unknown 代替 any
+function prettyPrint(x: unknown): string {
+  if (Array.isArray(x)) {
+    return '[' + x.map(prettyPrint).join(', ') + ']'
+  }
+  if (typeof x === 'string') {
+    return `'${x}'`
+  }
+  if (typeof x === 'number') {
+    return String(x);
+  }
+  return 'etc.';
+}
+
+function prettyPrintAny(x: any): string {
+  if (Array.isArray(x)) { // isArray 非类型守卫
+    return '[' + x.map(prettyPrint).join(', ')
+  }
+  return 'ect.'
+}
+
+console.log(prettyPrint('1'));
