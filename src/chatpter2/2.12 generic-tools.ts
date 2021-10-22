@@ -20,6 +20,10 @@ export type Pick<T, K extends keyof T> = {
   [P in K]: T[P];
 };
 
+export type RequiredPick<T, K extends keyof T> = {
+  [P in K]-?: T[P];
+}
+
 export type Exclude<T, U> = T extends U ? never : T;
 
 export type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
